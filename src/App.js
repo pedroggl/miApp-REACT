@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import { Card } from './components/Card/Card';
+import { Usuario } from './components/Usuario/Usuario';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* se puede autocompletar al intentar usar el
+      componente   */}
+      <Usuario nombre="Pedro G" edad={23} nacionalidad="Español" />
+      <Usuario nombre="Carla" edad={26} nacionalidad="Bolivia" />
+      <Card />
     </div>
   );
 }
