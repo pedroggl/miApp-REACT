@@ -8,6 +8,8 @@ export default function Counter() {
     // const [inputTextIngresado, setInputTextIngresado] = useState();
 
     const sumar = () => {
+        // cambia el valor de la variable number por el contenido del
+        // parentesis
         setNumber(number + 1);
     }
 
