@@ -12,7 +12,6 @@ export default function Text() {
 
   return (
     <div>
-
       <br /><button onClick={handleShow}>{show === true ? "Ocultar" : "Mostrar"}</button><br /><br />
       {/* <br /><button onClick={handleShow}>Mostrar / Ocultar</button><br /><br /> */}
 

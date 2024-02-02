@@ -30,13 +30,13 @@ export default function TextH2() {
     //de componente montado
 
     // se escribe cuando se monta o se desmonta solo
-    useEffect(
-        () => {
-            console.log("Componente montado");
-            return () => {
-                console.log("Componente desmontado");
-            }
-        }, []);
+    // useEffect(
+    //     () => {
+    //         console.log("Componente montado");
+    //         return () => {
+    //             console.log("Componente desmontado");
+    //         }
+    //     }, []);
 
     // se escribe cuando se monta y cuando se modifica el texto
     useEffect(
@@ -44,11 +44,10 @@ export default function TextH2() {
             console.log("Texto cambiado");
         }, [text]);
 
-
     return (
-        <div>
+        <>
             <input type="text" name="entrada" id="entrada" onChange={handleText} />
             <h2>{text}</h2>
-        </div>
+        </>
     )
 }
